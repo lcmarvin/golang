@@ -27,8 +27,9 @@ func (server MyServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	version := os.Getenv("VERSION")
-	w.Header().Set("VERSION", version)
+	const VERSION = "VERSION"
+	version := os.Getenv(VERSION)
+	w.Header().Set(VERSION, version)
 
 	fmt.Printf("IP:%s, Status:%d", strings.Split(r.RemoteAddr, ":")[0], http.StatusOK)
 }
