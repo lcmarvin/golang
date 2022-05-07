@@ -6,4 +6,5 @@ RUN go build -o /bin/cacamp/e2_2
 
 FROM golang:1.16-alpine
 COPY --from=build /bin/cacamp/e2_2 /bin/cacamp/e2_2
+EXPOSE 80
 ENTRYPOINT [ "/bin/cacamp/e2_2/e2_2" ]
