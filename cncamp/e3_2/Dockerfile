@@ -1,6 +1,6 @@
 FROM golang:1.16-alpine AS build
 
-COPY golang /go/src/golang
+COPY ./ /go/src/golang
 WORKDIR /go/src/golang/cncamp/e2_2
 RUN go build -o /bin/cncamp/e2_2/httpserver
 
