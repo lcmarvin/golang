@@ -64,15 +64,16 @@ Configure a credential helper to remove this warning. See
 https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 
 Login Succeeded
-[root@VM-16-16-centos golang]# docker push mdeng2022/http-server:latest
+[root@VM-16-16-centos ~]# docker push mdeng2022/http-server
+Using default tag: latest
 The push refers to repository [docker.io/mdeng2022/http-server]
-ea7aef2d88d9: Pushed
+ea7aef2d88d9: Layer already exists
 19c4d4cefc09: Layer already exists
 46e96c819e17: Layer already exists
 b6f786c730a9: Layer already exists
 63a6bdb95b08: Layer already exists
 8d3ac3489996: Layer already exists
-Put https://registry-1.docker.io/v2/mdeng2022/http-server/manifests/latest: net/http: TLS handshake timeout
+latest: digest: sha256:2c894778cce094dbb01e05f85ea3b8b33f49558b06b73b54c25a7481b0cbfeff size: 1576
 ```
 
 启动httpserver
