@@ -11,7 +11,7 @@ spec:
   containers:
     - name: http-server
       image: mdeng2022/http-server:1.0
-  ports:
-    - containerPort: 80
-      name: http-metrics
-      protocol: TCP
+      ports:
+      - containerPort: 80
+        name: http-metrics
+        protocol: TCP
